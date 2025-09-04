@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "outbreakbeacon"
+version = "0.1.0"
+description = "Integrate genomic and epidemiologic data for cluster detection and outbreak code assignment."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT License"}
+authors = [{name = "OutbreakBeacon maintainers"}]
+dependencies = [
+    "pandas>=2.1",
+    "scipy>=1.11",
+    "scikit-bio>=0.6.0",
+    "typer>=0.12",
+    "rich>=13.0",
+    "plotly>=5.18"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "pytest-cov>=4.1", "ruff>=0.4", "pre-commit>=3.7"]
+
+[project.scripts]
+outbreakbeacon = "outbreakbeacon.cli:app"

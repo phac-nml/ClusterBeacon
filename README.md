@@ -1,6 +1,6 @@
-# OutbreakBeacon
+# ClusterkBeacon
 
-**OutbreakBeacon** integrates **genomic** and **epidemiologic** data for **cluster detection** and **standardized outbreak code assignment**.
+**ClusterBeacon** integrates **genomic** and **epidemiologic** data for **cluster detection** and **standardized outbreak code assignment**.
 
 ## ✨ Key Features
 - **Cluster Detection** – combine WGS/cgMLST with epi linkages.
@@ -12,17 +12,16 @@
 ```bash
 # From the repo root
 pip install -e .
-outbreakbeacon --help
+clusterbeacon --help
 ```
 
 Example (placeholder):
 ```bash
-outbreakbeacon run --input data/example_dataset.tsv --output results/
 ```
 
 ## 📂 Structure
 ```
-src/outbreakbeacon/   # library + CLI
+src/clusterbeacon/   # library + CLI
 tests/                # unit tests (pytest)
 docs/                 # documentation stubs
 data/                 # example data
@@ -36,4 +35,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 MIT — see [LICENSE](LICENSE).
 
 ## 🔗 Citation
-> OutbreakBeacon: Integrating genomic and epidemiologic data for cluster detection and outbreak code assignment. GitHub, 2025.
+>ClusterBeacon: Integrating genomic and epidemiologic data for cluster detection and outbreak code assignment. GitHub, 2025.
